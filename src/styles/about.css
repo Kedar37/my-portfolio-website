@@ -1,0 +1,182 @@
+.aboutContainer{
+    width: 100%;
+    height: auto;
+    background-color: #EBE8E4;
+    overflow: hidden;
+}
+
+.aboutWrapper{
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutWrapper{
+        padding: 5rem 10rem;
+    }
+}
+
+.aboutRight{
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.aboutPara > p{
+    text-align: right;
+    line-height: 150%;
+    width: 100%;
+}
+
+.btnWrap{
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.line{
+    margin-left: auto;
+    width: 100px;
+    height: 2px;
+    background-color: #3E3025;
+}
+
+.resume > button{
+    width: auto;
+    padding: 1rem;
+    background-color: #3E3025;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #EBE8E4;
+    cursor: pointer;
+}
+
+.resume > button:hover{
+    background-color: #4d3d30;
+}
+
+
+.aboutLeft{
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutTitle{
+    font-size: 63px;
+    width: 100%;
+    color: #3E3025;
+    z-index: 2;
+}
+
+
+.myImages{
+    margin-top: auto;
+    z-index: 2;
+}
+
+.myImages > img{
+    height: 350px;
+    object-fit: cover;
+}
+
+.shape2{
+    height: 600px;
+    display: block;
+    position: absolute;
+    right: 78%;
+    z-index: 1;
+    animation: shape 80s infinite linear;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.shape2 > img{
+    opacity: 0.2;
+    height: 100%;
+}
+
+
+@keyframes shape {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) ;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 1s ease;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.shape2:nth-child(1){
+    transition-delay: 1000ms;
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutRight{
+        width: 450px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .aboutWrapper{
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .aboutTitle{
+        font-size: 50px;
+    }
+
+    .aboutLeft{
+        gap: 2rem;
+        width: auto;
+        height: auto;
+    }
+
+    .myImages{
+        margin-top: 0;
+    }
+
+    .myImages > img{
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .aboutRight{
+        height: auto;
+    }
+
+    .aboutPara > p{
+        text-align: center;
+    }
+
+    .btnWrap{
+        margin-top: 2rem;
+    }
+
+    .shape2{
+        right: 50%;
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "intro": {
+      "greeting": "HI, I'M",
+      "name": "KEDAR GAVALI",
+      "description": "I am a creative UX/UI designer and skilled front-end developer, who can blend designs with coding abilities. Driven by a curiosity for exploring new frontiers in web design and development. Committed to delivering innovative solutions that engage and delight users.",
+      "role": "CREATIVE",
+      "subRole": "DEVELOPER",
+      "subRole1": "DEVELOPER",
+      "subRole2": "DESIGNER",
+      "subRole3": "EDITOR"
+    },
+    "navbar": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "About": {
+      "title": "ABOUT ME",
+      "description": "I am from India. I specialize in design but am also a front-end developer. After completing graduation from design school in India, I have experience working as a UI/UX designer, graphic designer, video editor, and illustrator, I bring a diverse creative background. I have a passion for learning new things every day and like to implement them into my work. My goal is to blend innovative design with programming to create engaging and user-friendly digital experiences.",
+      "button": "Resume"
+    },
+    "Project": {
+      "title": "PROJECTS",
+      "button": "Check now"
+    },
+    "Project1": {
+      "description": "I've developed a Little Lemon non-existential restaurant website for the portfolio using React JS and Firebase for backend functionality, enabling user authentication and real-time data fetching. With Firebase, users can easily sign up, log in, order food, and reserve tables online. The website features a clean and intuitive user interface for a seamless experience. This project demonstrates the power of modern web technologies for enhancing restaurant services."
+    },
+    "Project2": {
+      "description": "I've developed a captivating Disney+ clone website using React and Firebase to showcase my CSS skills. A standout feature of this project is the personalized watchlist functionality, allowing users to create and manage lists of movies and series to watch later. The user interface reflects the iconic Disney+ style with meticulous attention to CSS details, delivering an immersive and visually appealing experience."
+    },
+    "Project3": {
+      "description": "I've crafted a simple weather app that demonstrates my API handling skills and proficiency with libraries like Bootstrap. This project allows users to easily retrieve and view current weather conditions and forecasts for any location. The app features a responsive design thanks to Bootstrap, ensuring a seamless experience across different devices."
+    },
+    "Project4": {
+      "description": "I've built a to-do list app using React and Tailwind CSS, showcasing clean design and essential functionalities. Users can create, edit, mark tasks as complete, and review past completed tasks. Data gets stored in local storage of the browser. The project highlights my ability to develop functional and stylish applications with minimal dependencies, focusing on user experience and task management efficiency."
+    },
+    "Project5": {
+      "description": "I created my first e-commerce project, Apato, using HTML, CSS, and JavaScript, offering rental and sale listings for apartments. This project reflects my early web development journey, demonstrating foundational skills in front-end development and e-commerce concepts. One regret is not using React for this project, which would have enhanced its functionality and scalability."
+    },
+    "Contact": {
+      "title": "CONTACT ME",
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "button": "send"
+    },
+    "Footer": {
+      "copyrights": "2024 - All rights reserved  |  Designed & developed by KedarGavali"
+    }
+  }

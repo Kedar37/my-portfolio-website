@@ -1,0 +1,220 @@
+.introContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    justify-content: space-evenly;
+    background-color: #EBE8E4;
+}
+
+.leftContent{
+    width: 600px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title{
+    font-size: 75px;
+    width: 100%;
+    color: #3E3025;
+    z-index: 2;
+}
+
+.shape{
+    width: 300px;
+    height: 300px;
+    display: block;
+    top: 6%;
+    left: 22%;
+    position: absolute;
+    z-index: 1;
+    animation: shape 60s infinite linear;
+    transition: all 0.5s ease;
+}
+
+.shape > img{
+    height: 100%;
+}
+
+
+@keyframes shape {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg) ;
+    }
+}
+
+
+.myImg{
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.myImg > img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gif{
+    margin-top: auto;
+}
+
+.gif > img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    .leftContent{
+        width: 700px;
+    }
+}
+
+
+
+.rightContent{
+        width: 450px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2rem;
+}
+
+.snsLinks{
+    display: inline-flex;
+    gap: 1.5rem;
+}
+
+.introPara{
+    line-height: 150%;
+    margin-top: auto;
+}
+
+.introPara > p{
+    width: 330px;
+    text-align: right;
+}
+
+.titleWrapper{
+    text-align: right;
+    overflow: hidden;
+}
+
+.titleWrapper .text{
+    position: relative;
+    font-size: 80px;
+    font-weight: 600;
+    width: 100%;
+    color: #EBE8E4;
+    -webkit-text-stroke: 2px #3E3025;
+}
+
+.titleWrapper .first-text{
+    color: #3E3025;
+}
+
+.sec-text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EBE8E4;
+    border-left: 2px solid #3E3025;
+    animation: animate 4s steps(9) infinite;
+}
+
+
+@keyframes animate{
+    30%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .rightContent{
+        width: 600px;
+    }
+
+    .introPara > p{
+        width: 350px;
+    }
+
+    .titleWrapper .firsttext{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introContainer{
+        padding-top: 2rem;
+    }
+
+    .leftContent{
+        margin-left: 2rem;
+    }
+
+    .gif{
+        display: none;
+    }
+
+    .shape{
+        width: 200px;
+        height: 200px;
+        top: 30%;
+        left: 40%;
+    }
+
+    .title{
+        font-size: 65px;
+    }
+
+    .myImg > img{
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .rightContent{
+        margin-right: 2rem;
+        height: auto;
+    }
+
+    .introPara{
+        margin-top: 0;
+    }
+
+    .titleWrapper .text{
+        font-size: 55px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .shape{
+        top: 4%;
+        left: 35%;
+    }
+
+    .rightContent{
+        height: auto;
+    }
+
+    .introPara{
+        margin-top: 0;
+    }
+}

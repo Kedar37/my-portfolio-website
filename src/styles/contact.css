@@ -1,0 +1,97 @@
+.contactContainer{
+    width: 100%;
+    height: auto;
+    background-color: #EBE8E4;
+    padding: 5rem 0;
+}
+
+.contactForm{
+    margin: 0 auto;
+    width: 88%;
+    height: auto;
+}
+
+.contactHead{
+    text-align: right;
+    font-size: 63px;
+    width: 100%;
+    color: #3E3025;
+}
+
+form{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.field{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    width: auto;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+
+textarea{
+    width: auto;
+    max-width: 500px;
+    height: 150px;
+    padding: 1rem;
+}
+
+.buttonwrap{
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 532px;
+    gap: 1rem;
+}
+
+.followline{
+    margin-left: auto;
+    width: 100px;
+    height: 2px;
+    background-color: #3E3025;
+}
+
+.submitBtn > button{
+    width: auto;
+    padding: 1rem;
+    background-color: #3E3025;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #EBE8E4;
+    cursor: pointer;
+}
+
+.submitBtn > button:hover{
+    background-color: #4d3d30;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contactHead{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    form{
+        margin-top: 3rem;
+    }
+}

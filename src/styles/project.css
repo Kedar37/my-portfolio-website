@@ -1,0 +1,148 @@
+.projectContainer{
+    width: 100%;
+    height: auto;
+    padding: 5rem 0;
+    background-color: #EBE8E4;
+}
+
+.heading{
+    font-size: 63px;
+    width: 100%;
+    color: #3E3025;
+    margin-bottom: 2rem;
+}
+
+.projectWrapper{
+    width: 80%;
+    display: flex;
+    margin: 6rem auto 0 auto;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projectImg{
+    width: 400px;
+    height: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.projectImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+.projectImg:hover{
+    border-radius: 1rem;
+}
+
+.projectImg>img:hover{
+    border-radius: 1rem;
+}
+
+.projectInfo{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.projectPara > p{
+    line-height: 150%;
+    width: 300px;
+    text-align: right;
+}
+
+@media screen and (min-width: 1024px) {
+    .projectPara > p{
+        width: 500px;
+    }
+
+    .projectInfo{
+        width: 500px;
+    }
+}
+
+.checkProject{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.followLine{
+    margin-left: auto;
+    width: 200px;
+    height: 2px;
+    background-color: #3E3025;
+}
+
+.checkProject > button{
+    padding: 1rem;
+    background-color: #3E3025;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #EBE8E4;
+    cursor: pointer;
+}
+
+.checkProject > button > a{
+    text-decoration: none;
+    color: #EBE8E4;
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.projectInfo:nth-child(1){
+    transition-delay: 1000ms;
+}
+
+@media screen and (max-width: 768px) {
+    .projectWrapper{
+        margin-top: 3rem;
+    }
+
+    .heading{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .projectInfo{
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .projectPara > p{
+        text-align: left;
+    }
+
+    .checkProject{
+        margin-top: 2rem;
+        margin-left: auto;
+    }
+
+    .followLine{
+        width: 100px;
+    }
+}
